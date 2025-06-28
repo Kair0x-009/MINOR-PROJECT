@@ -1,0 +1,40 @@
+main {
+      margin-left: 60px; /* Adjusted to account for the sidebar width */
+      padding: 40px;
+      transition: margin-left 0.75s ease;
+    }
+
+     .Sign-up_container {
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        box-sizing: border-box;
+        color: #201818;
+        overflow: hidden;
+        border-radius: 5px 0 0 5px;
+        transition: width 0.75s ease;
+        position: fixed;
+    } 
+
+
+    input {
+      border: none;
+      background-color: #e3e7ef;
+      padding: 12px;
+      color: rgba(76, 13, 223, 0.904);
+      border-radius: 10px;
+      width: 90%;
+      margin: 20px;
+     
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0px 10px;
+      border-radius: 5px;
+      width: auto;
+      
+    }
