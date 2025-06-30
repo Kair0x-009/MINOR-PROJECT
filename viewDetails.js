@@ -1,13 +1,22 @@
 //function for viewing product details
-function viewDetails(productId) {
+const detailsContainer = document.getElementById('detailsContainer');
+
     // Fetch product details from the API
-    fetch(`https://dummyjson.com/products/${productId}`)
-        .then(response => response.json())
-        .then(product => {
+    async function viewDetails(productId) {
+    try{
+    let response = await fetch(`https://dummyjson.com/products/${productId}`);
+    let product = await response.json();
+    Details(product);
+    }catch(error){
+        console.error('Error fetching product details:', error);
+        detailsContainer.innerHTML = `<p>Failed to fetch product details. Try again later.</p>`;
+    }
+}
+
         // Create a container for the product details
-        const detailsContainer = document.getElementById('detailsContainer');
+        function Details(product) {
         detailsContainer.innerHTML = `
-            <div class="productDetails">
+            <div class="product-Details">
             <img src="${product.images[0]}" alt="${product.title}" />
             <h3>${product.title}</h3>
             <p>Price: $${product.price.toFixed(2)}</p>
@@ -20,11 +29,13 @@ function viewDetails(productId) {
             <p>Warranty: ${product.warrantyInformation}</p>
             <p>shipping: ${product.shippingInformation}</p>
             <p>Return Policy: ${product.returnPolicy}</p>
-
+            <button class="closeDetails" onclick="closeDetails()">Close</button>
             </div>
         `;
-        })
-        .catch(error => {
-        console.error('Error fetching product details:', error);
-        });
-    }
+        }
+
+        //close view details
+        function closeDetails() {
+            detailsContainer.innerHTML = '';
+        }
+        

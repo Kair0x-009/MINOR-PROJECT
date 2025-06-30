@@ -1,4 +1,4 @@
-.product-list,
+.product-list, #detailsContainer,
 /* .search-list, */
 .sortItem  {
   display: flex;
@@ -10,7 +10,7 @@
   gap: 4px;
 }
 
-.product {
+.product ,.product-Details{
   background: rgb(231, 237, 242);
   border: 1px solid #ccc;
   padding: 15px;

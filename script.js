@@ -45,15 +45,18 @@ function displayProducts(products) {
       getItems(search);
     }
   });
+ 
   
   async function getItems(search) {
+    try {
       let response = await fetch(`https://dummyjson.com/products/search?q=${search}`);
-      const products = await response.json();
+      products = await response.json();
       console.log(products);
       displayProducts(products); // Pass the array directly
-   
+    }catch (error) {
       console.log("Error fetching products:");
-      containerS.innerHTML = `<p>Failed to fetch products. Try again later.</p>`;
+      container.innerHTML = `<p>Failed to fetch products. Try again later.</p>`;
+    }
   }
 
 
