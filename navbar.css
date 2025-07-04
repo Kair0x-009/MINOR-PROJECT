@@ -3,6 +3,9 @@ body {
       font-family: Arial, sans-serif;
       box-sizing: border-box;
     }
+    body, button, a ,input, select{
+  cursor: url("img/PrithviNarayanShah.png"), auto;
+}
 
    
 
@@ -10,13 +13,14 @@ body {
       width: 50px;
       height: 100vh;
       background-color: #1877f2;
-      padding: 0px 10px;
+      padding: 10px;
       box-sizing: border-box;
       color: #fff;
       overflow: hidden;
       border-radius: 0px;
       transition: width 0.75s ease;
       position: fixed;
+      /* position: absolute; */
     }
 
     .container:hover {

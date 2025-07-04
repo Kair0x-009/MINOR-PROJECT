@@ -26,7 +26,7 @@ function displayProducts(products) {
         <p>Discount: ${product.discountPercentage}%</p>
         <div class="btn">
       <button onclick="addToCart(${product.id})">Add to Cart</button>
-      <button onclick="viewDetails(${product.id})">View Details</button>
+      <button id="viewDetailsButton" onclick="viewDetails(${product.id})">View Details</button>
         </div>
     `;
     container.appendChild(div);
@@ -38,13 +38,6 @@ function displayProducts(products) {
   const btn = document.getElementById("this");
   // const search = input.value.trim();
   
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const search = input.value.trim();
-    if (search) {
-      getItems(search);
-    }
-  });
  
   
   async function getItems(search) {

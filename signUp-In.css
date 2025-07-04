@@ -1,26 +1,32 @@
 main {
-      margin-left: 60px; /* Adjusted to account for the sidebar width */
-      padding: 40px;
-      transition: margin-left 0.75s ease;
+      /* margin-left: 0px; Adjusted to account for the sidebar width */
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      
     }
 
      .Sign-up_container {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        padding: 2px;
+        height: auto;
+        margin-top: 150px;
+        margin-left: 600px;
         background-color: aqua;
-        box-sizing: border-box;
+        position: absolute;
         color: #201818;
         overflow: hidden;
-        border-radius: 5px 0 0 5px;
-        transition: width 0.75s ease;
-        position: fixed;
+        border-radius: 5% 25%;
+        text-align: center;
+        transition: margin-left 0.75s ease ease-in-out;
     } 
+    
 
 
     input {
       border: none;
       background-color: #e3e7ef;
-      padding: 12px;
+      padding: 10px;
       color: rgba(76, 13, 223, 0.904);
       border-radius: 10px;
       width: 90%;

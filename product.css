@@ -7,14 +7,13 @@
   padding: 20px;
   margin-top: 50px;
   margin-left: 50px;
-  gap: 4px;
+  gap: 3px;
 }
 
-.product ,.product-Details{
+ .product  /*,.product-Details*/{ 
   background: rgb(231, 237, 242);
   border: 1px solid #ccc;
   padding: 15px;
-  /* border-radius: 10px; */
   width: 10%;
   max-height: auto;
   text-align: left;
@@ -34,7 +33,6 @@
 }
 
 .product:hover {
-  /* transform: scale(1.05); */
   box-shadow: 0 12px 24px rgb(133, 189, 205);
 }
 
