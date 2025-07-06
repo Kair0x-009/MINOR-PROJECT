@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="navbar.css"/>
   <link rel="stylesheet" href="viewDetails.css"/>
   
+  
   <body>
   <!-- Navigation Bar-->
   <div class="topbar">
@@ -47,20 +48,23 @@
       <a href="#"><img src="img/products.png" alt="Gallery Icon">Products</a>
       <a href="#"><img src="img/blog.png" alt="Blog Icon">Blogs</a>
       <a href="#"><img src="img/contact.png" alt="Contact Icon">Contact</a>
-      <a href="#"><img src="img/user.png" alt="News Icon">Profile</a>
+      <a href="myCart.html"><img src="img/shopping-cart.gif" alt="Cart Icon">Cart</a>
+      <a href="profilePage.html"><img src="img/user.png" alt="News Icon">Profile</a>
     </div>
   </div>
   <!-- the main content of the page -->
-      <main>    
-            <!-- JS injects products here -->
-            <div class="product-list" id="productList"> </div>
-              <!-- the searched prod  -->
-            <div id="detailsContainer">  </div>
+      <main>
+        <div id="detailsContainer">  </div>
+        <div class="product-list" id="productList"> </div>
+        <!-- the searched prod  -->
+            
             
       </main>
 
     <script src="script.js"></script>
     <script src="category-list.js"></script>
     <script src="viewDetails.js"></script>
+    <script src="addToCart.js"></script>
   </body>
 </html>
+
