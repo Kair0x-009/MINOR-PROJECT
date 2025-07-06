@@ -1,6 +1,6 @@
 //function for viewing product details
 const detailsContainer = document.getElementById('detailsContainer');
-
+const prod = document.getElementsByClassName('product-list');
     // Fetch product details from the API
     async function viewDetails(productId) {
     try{

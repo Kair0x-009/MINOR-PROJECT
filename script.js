@@ -1,8 +1,6 @@
 const container = document.getElementById("productList");
 let URL = " https://dummyjson.com/products/";
 let products = [];
-
-
 async function getData() {
   let response = await fetch(URL);
   // console.log(response);
@@ -37,7 +35,13 @@ function displayProducts(products) {
   const input = document.getElementById("input");
   const btn = document.getElementById("this");
   // const search = input.value.trim();
-  
+   btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const search = input.value.trim();
+    if (search) {
+      getItems(search);
+    }
+  });
  
   
   async function getItems(search) {
