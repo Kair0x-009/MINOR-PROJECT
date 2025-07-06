@@ -2,6 +2,7 @@ body {
       margin: 0;
       font-family: Arial, sans-serif;
       box-sizing: border-box;
+      background:linear-gradient(to top right, #1080ff 0%, #4d079e 100%); 
     }
     body, button, a ,input, select{
   cursor: url("img/PrithviNarayanShah.png"), auto;
@@ -16,6 +17,8 @@ body {
       padding: 10px;
       box-sizing: border-box;
       color: #fff;
+      left: 0;
+      /* margin-top: 50px; */
       overflow: hidden;
       border-radius: 0px;
       transition: width 0.75s ease;
