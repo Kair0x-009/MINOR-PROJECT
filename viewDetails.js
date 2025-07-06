@@ -16,19 +16,24 @@ const detailsContainer = document.getElementById('detailsContainer');
         // Create a container for the product details
         function Details(product) {
         detailsContainer.innerHTML = `
-            <div class="product-Details">
+           <div class="product-Details">
             <img src="${product.images[0]}" alt="${product.title}" />
             <h3>${product.title}</h3>
-            <p>Price: $${product.price.toFixed(2)}</p>
-            <p>Rating: ${product.rating}</p>
-            <p>Stock: ${product.stock}</p>
-            <p>Discount: ${product.discountPercentage}%</p>
-            <p>Description: ${product.description}</p>
-            <p>Category: ${product.category}</p>
-            <p>Brand: ${product.brand}</p>
-            <p>Warranty: ${product.warrantyInformation}</p>
-            <p>shipping: ${product.shippingInformation}</p>
-            <p>Return Policy: ${product.returnPolicy}</p>
+            Price:  $${product.price.toFixed(2)}<br>
+            Rating: ${product.rating}<br>
+            Stock: ${product.stock}<br>
+            Discount: ${product.discountPercentage}%<br>
+            Description: ${product.description}<br>
+            Category: ${product.category}<br>
+            Brand: ${product.brand}<br>
+            Warranty: ${product.warrantyInformation}<br>
+            shipping: ${product.shippingInformation}<br>
+            Return Policy: ${product.returnPolicy}<br>
+            MiniMum order Qunatity: ${product.minimumOrderQuantity}<br>
+            <img src="${product.meta.qrCode}" alt="${product.title}" />
+            Created At: ${product.meta.updatedAt}<br>
+            Updated At: ${product.meta.createdAt}<br>
+            Barcode: ${product.meta.barcode}<br>  
             <button class="closeDetails" onclick="closeDetails()">Close</button>
             </div>
         `;
