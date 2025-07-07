@@ -5,9 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  padding: 20px;
-  margin-top: 50px;
-  margin-left: 50px;  gap: 3px;
+  padding: 0px 20px;
+  margin: 0px 0px 50px 50px;
+   gap: 3px;
   color: white;
   
 }
